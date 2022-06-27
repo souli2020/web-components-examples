@@ -33,7 +33,7 @@
          
          
         // create the css style
-        let style = document.createElement('style')
+        const style = document.createElement('style')
          style.textContent = `
                                 .wrapper {
                                 position: relative;
