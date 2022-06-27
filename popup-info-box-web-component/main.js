@@ -17,12 +17,17 @@
          
          const text = popUpInfo.getAttribute('data-text')
          info.textContent = text
-          //insert icon*
-           let imgUrl 
-          if(popUpInfo.hasAttribute("img")){
-              imgUrl = popUpInfo.getAttribute('img')
+          //insert icon
+
+          let imgUrl;
+          if(this.hasAttribute('img'))
+          {
+            imgUrl = this.getAttribute('img');
+          } 
+          else
+          {
+            imgUrl = 'img/default.png';
           }
-         else{imgUrl = "defaultpng.png"}
      
          //create the img 
          const img = document.createElement('img')
